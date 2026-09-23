@@ -1,23 +1,64 @@
 aid: openei
+
 name: OpenEI
-description: 'OpenEI is a company surfaced via the API Evangelist harvest backlog (source: energy) and
-  added to the network as a stub for full-pipeline profiling.'
+
+description: 'OpenEI (Open Energy Information) is a collaborative platform that provides free, open access to energy data, models, and analysis tools. It aims to accelerate the transition to sustainable energy by sharing information, fostering community contributions, and supporting research and policy development. The site hosts a wiki, datasets, and APIs for developers to retrieve energy-related information.'
+
 url: https://raw.githubusercontent.com/api-evangelist/openei/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:energy
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-23 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-23'
+
 modified: '2026-09-23'
+
 tags:
-- Company
-apis: []
+- Energy
+- Data
+- OpenSource
+- Community
+- Research
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Security
+  url: http://www.energy.gov/vulnerability-disclosure-policy
+- type: Hosts
+  url: hosts/openei-hosts.yml
+- type: SignUp
+  url: https://auth.openei.org/register?redir=https://openei.org/wiki/Main+Page
+- type: VulnerabilityDisclosure
+  url: security/openei-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/openei-domain-security.yml
 - type: Website
   url: https://openei.org/
+
+apis: []
+
+x-coverage:
+  state: gated
+  reason: partner-login
+  detail: OpenAPI spec request at https://api.openei.org/openapi.json returned 403, indicating access is gated behind authentication.
+  evidence:
+    - url: https://api.openei.org/openapi.json
+      status: 403
+  checked: 2026-09-23
+x-enrichment:
+  date: '2026-09-23'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
