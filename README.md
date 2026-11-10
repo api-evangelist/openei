@@ -80,20 +80,27 @@ Each property below is a page on APIs.io carrying the machine-readable artifact 
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [Openei Domain Security](https://apis.io/security/openei/openei-domain-security/)
-- [Openei Vulnerability Disclosure](https://apis.io/security/openei/openei-vulnerability-disclosure/)
+- [OpenEI Domain Security](https://apis.io/security/openei/openei-domain-security/)
+- [OpenEI Vulnerability Disclosure](https://apis.io/security/openei/openei-vulnerability-disclosure/)
 
 ## Where to find this API
 
 Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://openei.org/)
+- [Documentation](https://openei.org/wiki/Main_Page)
+- [Getting started](https://openei.org/wiki/Get_Involved)
+- [API reference](https://api.openei.org/openapi.json)
 - [Sign up](https://auth.openei.org/register?redir=https://openei.org/wiki/Main+Page)
+- [Support](https://openei.org/wiki/Help:Contents)
+- [Blog](https://openei.org/wiki/Category:Blog)
 - [Security](http://www.energy.gov/vulnerability-disclosure-policy)
+- [Terms of service](https://openei.org/wiki/Terms_of_Service)
+- [Privacy policy](https://openei.org/wiki/Privacy_Policy)
 
 ## API Evangelist rating
 
-**Kin Score 8.0** — minimal · rubric 0.24.0 · scored 2026-10-17
+**Kin Score 8.0** — minimal · rubric 0.25.0 · scored 2026-10-23
 
 | Facet | Score |
 |---|---|
@@ -127,6 +134,8 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Protected Resource Metadata | — |
 | Dynamic Client Registration | — |
 | Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
 
 **Regulatory alignment 9.8** — Energy & Utilities
 
